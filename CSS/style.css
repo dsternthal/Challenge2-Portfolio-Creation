@@ -1,0 +1,39 @@
+:root{
+
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px red
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+header nav {
+    width: 50%;
+    border: 
+}
+
+figure {
+    background-image: url(../Assets/02-advanced-css-homework-demo.gif);
+    background-size: cover;
+    background-repeat: none;
+    height: 200px;
+}
+.left-side{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.left-side.title{
+    width: 10%;
+    border-right: 1px black solid;
+}
+
+.left-side .section-container{
+    width: 88%;
+}
