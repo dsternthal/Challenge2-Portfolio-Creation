@@ -1,39 +1,48 @@
-:root{
+:root {}
 
-}
-
-header{
+header {
     display: flex;
     flex-wrap: wrap;
-    border: 1px red
+    border: 1px red solid;
 }
+
+header h1 {
+    width: 50%;
+    border: 1px black solid
+}
+
+header nav {
+    width: 50%;
+    border: 1px black solid
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-header nav {
-    width: 50%;
-    border: 
-}
 
 figure {
-    background-image: url(../Assets/02-advanced-css-homework-demo.gif);
+    background-image: url(../images/cat-placeholder.jpg);
     background-size: cover;
     background-repeat: none;
     height: 200px;
 }
-.left-side{
-    display:flex;
-    flex-wrap: wrap;
 
+.left-side {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.left-side.title{
+.left-side .title {
     width: 10%;
-    border-right: 1px black solid;
+    border-right: 3px black solid;
 }
 
 .left-side .section-container{
-    width: 88%;
+width: 88%;
+}
+
+img{
+    width: 100%;
 }
