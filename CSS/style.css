@@ -25,8 +25,12 @@ nav ul {
 figure {
     background-image: url(../images/cat-placeholder.jpg);
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
     height: 200px;
+}
+
+img{
+    width: 100%;
 }
 
 .left-side {
@@ -37,12 +41,42 @@ figure {
 .left-side .title {
     width: 10%;
     border-right: 3px black solid;
+    text-align: right;
 }
 
 .left-side .section-container{
 width: 88%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 }
 
-img{
+
+.card{
+    width:45%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.card h3 {
+    position: absolute; 
+    z-index: 1;
+    bottom: 10%
+}
+
+.section-container ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     width: 100%;
+}
+#image1{
+    position: relative;
+    width: 100%;
+    margin-top:20px;
+}
+#image1 h3{
+    position:absolute;
+    z-index: 1;
+    bottom: 10%;
 }
