@@ -1,5 +1,6 @@
 :root {
----grid-color: lightblue solid;
+---grid-color: lightblue;
+---textbox-padding: 15px 20px 15px 20px;
 
 }
 
@@ -34,12 +35,9 @@ figure {
 
 img{
     width: 100%;
-    border: 5px var(---grid-color);
+    border: 5px var(---grid-color) solid;
 }
 
-.pinkBackground {
-    background-color: deeppink;
-}
 
 .left-side {
     display: flex;
@@ -60,6 +58,12 @@ justify-content: space-between;
 }
 
 
+.homieWorks{
+padding: var(---textbox-padding);
+border: 5px var(---grid-color);
+background-color: var(---grid-color);
+color: black;
+}
 .card{
     width:45%;
     position: relative;
@@ -72,12 +76,11 @@ justify-content: space-between;
     position: absolute; 
     z-index: 3;
     bottom: 10%;
-    border: 5px var(---grid-color);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 20px;
-    padding-left: 20px;
+    border: 5px var(---grid-color) solid;
     background-color: var(---grid-color);
+    color:black;
+    min-width: 50px;
+    /* padding: var(---textbox-padding) */
 }
 
 .section-container ul{
@@ -96,3 +99,8 @@ justify-content: space-between;
     z-index: 1;
     bottom: 10%;
 }
+
+/* #textbox{
+    background-color:var(---grid-color);
+    color:black;
+} */
