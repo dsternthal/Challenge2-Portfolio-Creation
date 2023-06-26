@@ -1,23 +1,39 @@
 :root {
----grid-color: lightblue;
+---grid-color:rgb(173, 221, 173);
 ---textbox-padding: 15px 20px 15px 20px;
+---dark:rgb(69, 69, 69);
+---accent:green;
+}
 
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
     display: flex;
     flex-wrap: wrap;
-    border: 1px red solid;
+    border-bottom: 10px var(---dark) solid;
 }
 
 header h1 {
     width: 50%;
-    border: 1px black solid
+    background-color: var(---grid-color);
+    color: rgb(69, 69, 69);
+    font-size: 50px;
+    display: flex;
+    justify-content: right;
+    padding-right: 2%;
 }
 
 header nav {
     width: 50%;
-    border: 1px black solid
+    color: lightblue;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 15px;
+    text-align: center;
+    background-color: rgb(69, 69, 69);
 }
 
 nav ul {
@@ -31,6 +47,19 @@ figure {
     background-size: cover;
     background-repeat: no-repeat;
     height: 200px;
+    position:relative;
+}
+
+figure h1{
+    position: absolute; 
+    z-index: 1;
+    bottom: 10%;
+    border: 5px none solid;
+    background-color: var(---grid-color);
+    color: var(---accent);
+    min-width: 70px;
+    min-height: 50px;
+    font-size: 30px;
 }
 
 img{
@@ -38,6 +67,16 @@ img{
     border: 5px var(---grid-color) solid;
 }
 
+section h1{
+    font-size: 30px;
+    padding-right: 2%;
+    color: var(---accent)
+}
+
+section ul{
+    padding-top: 15px;
+    text-align: center;
+}
 
 .left-side {
     display: flex;
@@ -46,7 +85,7 @@ img{
 
 .left-side .title {
     width: 10%;
-    border-right: 3px black solid;
+    border-right: 7px var(---dark) solid;
     text-align: right;
 }
 
@@ -55,6 +94,7 @@ width: 88%;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
+padding-left: 3%;
 }
 
 
@@ -78,8 +118,10 @@ color: black;
     bottom: 10%;
     border: 5px var(---grid-color) solid;
     background-color: var(---grid-color);
-    color:black;
-    min-width: 50px;
+    color: var(---accent);
+    min-width: 70px;
+    min-height: 50px;
+    font-size: 30px;
     /* padding: var(---textbox-padding) */
 }
 
@@ -99,8 +141,3 @@ color: black;
     z-index: 1;
     bottom: 10%;
 }
-
-/* #textbox{
-    background-color:var(---grid-color);
-    color:black;
-} */
