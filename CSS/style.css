@@ -1,12 +1,12 @@
 :root {
----grid-color:rgb(173, 221, 173);
----textbox-padding: 15px 20px 15px 20px;
----dark:rgb(69, 69, 69);
----accent:green;
+    ---grid-color: rgb(173, 221, 173);
+    ---textbox-padding: 15px 20px 15px 20px;
+    ---dark: rgb(69, 69, 69);
+    ---accent: green;
 }
 
-*{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
@@ -16,7 +16,7 @@ header {
 }
 
 header h1 {
-    width: 50%;
+    width: 30%;
     background-color: var(---grid-color);
     color: rgb(69, 69, 69);
     font-size: 50px;
@@ -26,14 +26,22 @@ header h1 {
 }
 
 header nav {
-    width: 50%;
-    color: lightblue;
+    width: 70%;
+    color: var(---grid-color);
     text-decoration: underline;
     font-weight: bold;
     font-size: larger;
     padding-top: 15px;
     text-align: center;
     background-color: rgb(69, 69, 69);
+}
+
+nav ul a {
+    color: var(---grid-color);
+}
+
+nav ul li a:active {
+    color: red;
 }
 
 nav ul {
@@ -47,11 +55,13 @@ figure {
     background-size: cover;
     background-repeat: no-repeat;
     height: 200px;
-    position:relative;
+    position: relative;
+    display: flex;
+    justify-content: end;
 }
 
-figure h1{
-    position: absolute; 
+figure h1 {
+    position: absolute;
     z-index: 1;
     bottom: 10%;
     border: 5px none solid;
@@ -60,20 +70,21 @@ figure h1{
     min-width: 70px;
     min-height: 50px;
     font-size: 30px;
+    margin-right: 3%;
 }
 
-img{
+img {
     width: 100%;
     border: 5px var(---grid-color) solid;
 }
 
-section h1{
+section h1 {
     font-size: 30px;
     padding-right: 2%;
     color: var(---accent)
 }
 
-section ul{
+section ul {
     padding-top: 15px;
     text-align: center;
 }
@@ -81,6 +92,7 @@ section ul{
 .left-side {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 3%;
 }
 
 .left-side .title {
@@ -89,31 +101,30 @@ section ul{
     text-align: right;
 }
 
-.left-side .section-container{
-width: 88%;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-padding-left: 3%;
+.left-side .section-container {
+    width: 88%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 3%;
 }
 
 
-.homieWorks{
-padding: var(---textbox-padding);
-border: 5px var(---grid-color);
-background-color: var(---grid-color);
-color: black;
+.homieWorks {
+    padding: var(---textbox-padding);
+    border: 5px var(---grid-color);
+    background-color: var(---grid-color);
+    color: black;
 }
-.card{
-    width:45%;
+
+.card {
+    width: 45%;
     position: relative;
     margin-top: 20px;
-    color:var(---grid-color)
-    /* border: 5px turquoise solid; */
-}
+    color: var(---grid-color)}
 
 .card h3 {
-    position: absolute; 
+    position: absolute;
     z-index: 3;
     bottom: 10%;
     border: 5px var(---grid-color) solid;
@@ -122,22 +133,37 @@ color: black;
     min-width: 70px;
     min-height: 50px;
     font-size: 30px;
-    /* padding: var(---textbox-padding) */
 }
 
-.section-container ul{
+.section-container ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
 }
-#image1{
+
+#image1 {
     position: relative;
     width: 100%;
-    margin-top:20px;
+    margin-top: 20px;
 }
-#image1 h3{
-    position:absolute;
+
+#image1 h3 {
+    position: absolute;
     z-index: 1;
     bottom: 10%;
+}
+
+@media screen and (max-width:578px) {
+    .card h3 {
+        font-size: 10%;
+    }
+
+    .left-side .title {
+        font-size: 20%;
+        width: 20%;
+    }
+    .left-side .section-container{
+        width: 75%;
+    }
 }
