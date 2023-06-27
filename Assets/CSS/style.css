@@ -164,6 +164,12 @@ section h3 a:active{
     width: 100%;
 }
 
+.section-container ul a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: larger;
+}
+
 #image1 {
     position: relative;
     width: 100%;

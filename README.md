@@ -6,7 +6,7 @@ For now, you can click on "code refactor"; you will be directed to our first hom
 Additionally, please note that I have added photos of my dog, Howard, as a placeholder for projects to come.
 
 You can see this in the image below:
-![Howard as my Filler Image.](./images/portfolio-screenshot.png)
+![Howard as my Filler Image.](./assets/images/portfolio-screenshot.png)
 
 # Resources
 I went to office hours and received guidence from Professor Phil Loy.
