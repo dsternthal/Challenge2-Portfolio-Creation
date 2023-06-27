@@ -12,3 +12,10 @@ You can see this in the image below:
 I went to office hours and received guidence from Professor Phil Loy.
 
 Here he guided me through the wire frame & then assisted with the Media Query 
+
+
+# Links
+
+Application URL: https://dsternthal.github.io/Challenge2-Portfolio-Creation/
+
+GitHub Repository: https://github.com/dsternthal/Challenge2-Portfolio-Creation 
