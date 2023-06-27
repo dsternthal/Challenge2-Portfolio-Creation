@@ -2,7 +2,7 @@
     ---grid-color: rgb(173, 221, 173);
     ---textbox-padding: 15px 20px 15px 20px;
     ---dark: rgb(69, 69, 69);
-    ---accent: rgb(2, 80, 2);
+    ---accent: darkgreen;
 }
 
 * {
@@ -41,7 +41,7 @@ nav ul a {
 }
 
 nav ul li a:active {
-    color: red;
+    color: var(---accent);
 }
 
 nav ul {
@@ -51,10 +51,10 @@ nav ul {
 }
 
 figure {
-    background-image: url(../images/cat-placeholder.jpg);
-    background-size: cover;
+    background-image: url(../images/wyoming.jpeg);
+    background-size:cover;
     background-repeat: no-repeat;
-    height: 200px;
+    min-height: 250px;
     position: relative;
     display: flex;
     justify-content: end;
@@ -126,8 +126,8 @@ section ul {
     width: 45%;
     position: relative;
     margin-top: 20px;
-    color: var(---grid-color)}
-
+    color: var(---grid-color);
+}
 .card h3 {
     position: absolute;
     z-index: 3;
